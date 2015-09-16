@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		24C2129A1BA9C105001E9CC2 /* TestCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C212991BA9C105001E9CC2 /* TestCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C212A21BA9C13A001E9CC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C212A11BA9C13A001E9CC2 /* Test.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24C212961BA9C105001E9CC2 /* TestCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C212991BA9C105001E9CC2 /* TestCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCrypto.h; sourceTree = "<group>"; };
 		24C2129B1BA9C105001E9CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C212A11BA9C13A001E9CC2 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				24C212991BA9C105001E9CC2 /* TestCrypto.h */,
+				24C212A11BA9C13A001E9CC2 /* Test.swift */,
 				24C2129B1BA9C105001E9CC2 /* Info.plist */,
 			);
 			path = TestCrypto;
@@ -90,6 +93,7 @@
 		24C2128D1BA9C105001E9CC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Daniel Tull";
 				TargetAttributes = {
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C212A21BA9C13A001E9CC2 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +233,7 @@
 		24C2129F1BA9C105001E9CC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +244,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.danieltull.TestCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		24C212A01BA9C105001E9CC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
