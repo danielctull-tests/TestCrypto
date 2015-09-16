@@ -18,6 +18,7 @@
 		24C2129B1BA9C105001E9CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C212A11BA9C13A001E9CC2 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		24C212A31BA9C170001E9CC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		24C212AB1BA9C25C001E9CC2 /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +37,7 @@
 			isa = PBXGroup;
 			children = (
 				24C212981BA9C105001E9CC2 /* TestCrypto */,
+				24C212A61BA9C1B9001E9CC2 /* Modules */,
 				24C212A51BA9C174001E9CC2 /* Frameworks */,
 				24C212971BA9C105001E9CC2 /* Products */,
 			);
@@ -65,6 +67,22 @@
 				24C212A31BA9C170001E9CC2 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24C212A61BA9C1B9001E9CC2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				24C212A71BA9C1B9001E9CC2 /* CommonCrypto */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		24C212A71BA9C1B9001E9CC2 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				24C212AB1BA9C25C001E9CC2 /* module.map */,
+			);
+			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +274,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.danieltull.TestCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Modules/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -274,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.danieltull.TestCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Modules/CommonCrypto";
 			};
 			name = Release;
 		};
