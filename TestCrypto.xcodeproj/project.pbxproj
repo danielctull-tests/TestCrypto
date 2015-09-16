@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24C2129A1BA9C105001E9CC2 /* TestCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C212991BA9C105001E9CC2 /* TestCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24C212A21BA9C13A001E9CC2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C212A11BA9C13A001E9CC2 /* Test.swift */; settings = {ASSET_TAGS = (); }; };
+		24C212A41BA9C170001E9CC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C212A31BA9C170001E9CC2 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		24C212991BA9C105001E9CC2 /* TestCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCrypto.h; sourceTree = "<group>"; };
 		24C2129B1BA9C105001E9CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C212A11BA9C13A001E9CC2 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		24C212A31BA9C170001E9CC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C212A41BA9C170001E9CC2 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				24C212981BA9C105001E9CC2 /* TestCrypto */,
+				24C212A51BA9C174001E9CC2 /* Frameworks */,
 				24C212971BA9C105001E9CC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +57,14 @@
 				24C2129B1BA9C105001E9CC2 /* Info.plist */,
 			);
 			path = TestCrypto;
+			sourceTree = "<group>";
+		};
+		24C212A51BA9C174001E9CC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24C212A31BA9C170001E9CC2 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
